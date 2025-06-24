@@ -12,7 +12,7 @@ app.post('/', express.json(), async (req, res) => {
   console.log('Trello отправил webhook');
   try {
     const response = await fetch(
-      'https://script.google.com/macros/s/AKfycbzMIdHyMMxBZaSon4havRN7C0kb1mC-0Y3X-svFUML3rtRAq11xpTBZcan6HR16cEilhw/exec',
+      'https://script.google.com/macros/s/AKfycbwZh_-iOAQ01XfC9eob6KAQ8RVHPwlJRCxwtFlAcOsqvkuoSrKJ8Sf-uhObsewToqlfJQ/exec',
       {
         method: 'POST',
         body: JSON.stringify(req.body),
